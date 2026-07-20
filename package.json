@@ -1,12 +1,15 @@
 {
+  "name": "mjr-safety-nets",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
+    "build": "echo 'Static site ready'",
     "start": "firebase serve",
     "dev": "firebase serve",
     "deploy": "firebase deploy",
-    "deploy:cf": "npx wrangler pages deploy src --project-name=mjr-safety-nets",
-    "dev:cf": "npx wrangler pages dev src"
+    "deploy:cf": "npx wrangler pages deploy src --project-name=mjr-safety-nets"
   },
-  "dependencies": {
+  "devDependencies": {
     "firebase-tools": "^15.5.1",
     "wrangler": "^3.114.0"
   }
