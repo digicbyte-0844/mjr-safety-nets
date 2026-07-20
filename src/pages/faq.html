@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FAQ - Frequently Asked Questions | MJR Building covering nets</title>
+    <meta name="description"
+        content="Find answers to common questions about building covering nets, duct area netting, swimming pool safety nets, and bird spikers. Call 9553331979">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css?v=4">
+    <link rel="stylesheet" href="../assets/css/floating-contact.css">
+    <style>
+        .faq-item {
+            background: white;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(135deg, #0066CC 0%, #3385DB 100%);
+            color: white;
+            font-weight: 600;
+            font-size: 1.125rem;
+        }
+
+        .faq-question:hover {
+            background: linear-gradient(135deg, #0055BB 0%, #2274CA 100%);
+        }
+
+        .faq-question i {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0 1.5rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 1.5rem;
+        }
+
+        .faq-answer p {
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="../assets/css/floating-contact.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container-fluid">
+            <div class="top-bar-content">
+                <div class="top-bar-info">
+                    <div class="top-bar-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Karmanghat, Hyderabad</span>
+                    </div>
+                    <div class="top-bar-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:merugujaggarao1979@gmail.com" style="color: white;">merugujaggarao1979@gmail.com</a>
+                    </div>
+                    <div class="top-bar-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:9553331979" style="color: white;">9553331979</a> | <a href="tel:9989023705" style="color: white;">9989023705</a>
+                    </div>
+                    <div class="top-bar-item">
+                        <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+                        <a href="https://wa.me/919553331979" style="color: white;">WhatsApp</a>
+                    </div>
+                </div>
+                <div class="top-bar-links">
+                    <a href="blog.html">Blog</a>
+                    <a href="faq.html">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="header" id="header">
+        <div class="container-fluid">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html" class="logo-link">
+                        <img src="../asswebp" alt="MJR Building covering nets Logo" class="logo-img"
+                            width="100" height="100" fetchpriority="high">
+                        <div class="logo-text-wrapper">
+                            <span class="logo-main-text">MJR</span>
+                            <span class="logo-sub-text">BUILDING COVERING NETS</span>
+                        </div>
+                    </a>
+                </div>
+
+                <nav class="nav">
+                    <div class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="../index.html#services" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                        <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="tel:9553331979" class="nav-cta"><i class="fas fa-phone-alt"></i> Call Now</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- FAQ Hero -->
+    <section class="section"
+        style="background: linear-gradient(135deg, #0066CC 0%, #3385DB 100%); padding: 4rem 0; color: white; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1rem;">❓ Frequently Asked Questions</h1>
+            <p style="font-size: 1.25rem; opacity: 0.9;">Find answers to common questions about our safety net services
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto;">
+
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How do I book an installation service?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Booking is easy! Simply call us at <a href="tel:9553331979"
+                                style="color: #0066CC; font-weight: 600;">9553331979</a> or WhatsApp us. Our team will
+                            schedule a free site visit, provide a quote, and complete the installation at your
+                            convenience. We serve all areas across Hyderabad.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What types of safety nets do you offer?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            We offer a comprehensive range including: Pigeon Safety Nets, Anti-Bird Nets, Balcony Safety
+                            Nets, Children Safety Nets, Construction Safety Nets, Cricket Practice Nets, Industrial
+                            Safety Nets, Building Safety Nets, and many more specialized solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How long does installation take?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Most residential installations (balconies, windows) take 2-4 hours depending on the area
+                            size. Commercial and construction site installations may take longer. We ensure quick,
+                            efficient installation with minimal disruption to your daily routine.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What is the lifespan of your safety nets?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Our UV-resistant HDPE safety nets have a lifespan of 5-7 years with proper maintenance. The
+                            nets are weather-resistant and designed to withstand harsh conditions including rain, sun,
+                            and wind.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Are the nets visible from outside?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Our safety nets are designed to be nearly invisible. We use transparent and color-matched
+                            nets that blend seamlessly with your building's aesthetic while providing effective
+                            protection.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you provide warranty on installation?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Yes! We provide a 2-year warranty on professional installation and workmanship. Our
+                            high-quality materials come with a 5-7 year durability guarantee. We stand behind our work
+                            with 100% satisfaction assurance.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What is your pricing structure?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            We offer transparent, competitive pricing with no hidden costs. Prices vary based on net
+                            type, area size, and height. Contact us for a free quote and site visit. We guarantee the
+                            best quality at the most affordable rates in Hyderabad.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Can nets be installed on all types of buildings?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Absolutely! We install safety nets on all types of residential, commercial, and industrial
+                            buildings. Whether it's a high-rise apartment, independent house, commercial complex, or
+                            construction site, we have customized solutions for every property type.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 9 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do pigeon nets harm birds?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            No, our pigeon nets are completely humane. They simply create a physical barrier that
+                            prevents birds from entering your space without causing any harm. It's a safe, ethical
+                            solution for bird control that protects both your property and the birds.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ 10 -->
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Which areas in Hyderabad do you cover?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            We provide services across all areas of Hyderabad including Jubilee Hills, Banjara Hills,
+                            Gachibowli, Madhapur, Kukatpally, Miyapur, Secunderabad, LB Nagar, and all surrounding
+                            localities. Call us for service in your area!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Still Have Questions CTA -->
+            <div
+                style="margin-top: 4rem; text-align: center; background: linear-gradient(135deg, #FF6600 0%, #FF8833 100%); padding: 3rem; border-radius: 1rem; color: white;">
+                <h2 style="margin-bottom: 1rem;">Still Have Questions?</h2>
+                <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.95;">
+                    Our team is here to help! Call or WhatsApp us for immediate assistance.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="tel:9553331979" class="btn btn-lg" style="background: white; color: #FF6600;">
+                        <i class="fas fa-phone"></i> Call: 9553331979
+                    </a>
+                    <a href="https://wa.me/919553331979?text=Hi, I have some questions about safety nets"
+                        class="btn btn-lg" style="background: #25D366; color: white;">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MJR BUILDING COVERING NETS</h3>
+                    <p>Proprietor: MJ</p>
+                    <p>Expert safety net solutions for buildings, duct areas, swimming pools, and bird spikers in Hyderabad.</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="tel:9553331979" style="color: white; font-size: 1.15rem; font-weight: 600;">
+                            <i class="fas fa-phone"></i> 9553331979
+                        </a>
+                        <span style="color: white; opacity: 0.6; margin: 0 0.3rem;">/</span>
+                        <a href="tel:9989023705" style="color: white; font-size: 1.15rem; font-weight: 600;">
+                            9989023705
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Popular Services</h3>
+                <ul class="footer-links">
+                    <li><a href="services/building-covering-nets.html">Building Covering Nets</a></li>
+                    <li><a href="services/duct-area-covering-nets.html">Duct Area Covering Nets</a></li>
+                    <li><a href="services/swimming-pool-covering-nets.html">Swimming Pool Nets</a></li>
+                    <li><a href="services/bird-spikers.html">Bird Spikers</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-phone"></i> <a href="tel:9553331979" style="color: inherit;">9553331979</a> / <a href="tel:9989023705" style="color: inherit;">9989023705</a></p>
+                <p><i class="fas fa-envelope"></i> merugujaggarao1979@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Green Park Colony, Karmanghat, Hyderabad, Telangana</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 MJR Building covering nets. All Rights Reserved. | Proprietor: MJ</p>
+        </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        function toggleFAQ(element) {
+            const faqItem = element.parentElement;
+            const isActive = faqItem.classList.contains('active');
+
+            // Close all FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Toggle current item
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+
+        // Open first FAQ by default
+        document.addEventListener('DOMContentLoaded', function () {
+            const firstFAQ = document.querySelector('.faq-question');
+            if (firstFAQ) {
+                toggleFAQ(firstFAQ);
+            }
+        });
+    </script>
+    <!-- Floating Contact Buttons - Static & Always Visible -->
+    <div class="floating-contact">
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/919553331979?text=Hi, I'm interested in your safety net services"
+            class="floating-btn whatsapp" data-tooltip="WhatsApp Us" aria-label="Contact us on WhatsApp" target="_blank"
+            rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <!-- Phone Button -->
+        <a href="tel:9553331979" class="floating-btn phone" data-tooltip="Call: 9553331979"
+            aria-label="Call us at 9553331979">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+
+        <!-- Email Button -->
+        <a href="mailto:merugujaggarao1979@gmail.com" class="floating-btn email" data-tooltip="Email Us"
+            aria-label="Send us an email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+    <script src="../assets/js/whatsapp-modal.js"></script>
+</body>
+
+</html>

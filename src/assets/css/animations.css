@@ -1,0 +1,517 @@
+/* ========================================
+   OPTIMIZED ANIMATIONS - LAG-FREE
+   Pure CSS - GPU Accelerated
+   ======================================== */
+
+/* Optimize Animation Performance - Apply only to specific elements */
+.service-card,
+.feature-card,
+.btn,
+.stat-item,
+.floating-btn {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform, opacity;
+}
+
+/* === SIMPLE, SMOOTH ANIMATIONS === */
+
+/* Fade In Up - GPU Optimized */
+@keyframes fadeInUp-optimized {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 40px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Scale Zoom - GPU Optimized */
+@keyframes zoomIn-optimized {
+    from {
+        opacity: 0;
+        transform: scale3d(0.8, 0.8, 1);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+/* Bounce - GPU Optimized */
+@keyframes bounceIn-optimized {
+    0% {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale3d(1.05, 1.05, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+/* Slide optimized */
+@keyframes slideInFromRight-optimized {
+    from {
+        transform: translate3d(100%, 0, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+/* Gentle Glow - Simplified */
+@keyframes gentleGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 10px rgba(0, 102, 204, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(0, 102, 204, 0.5);
+    }
+}
+
+.btn-primary {
+    animation: gentleGlow 3s ease-in-out infinite;
+}
+
+/* Simple Float - No Lag */
+@keyframes simpleFloat {
+
+    0%,
+    100% {
+        transform: translate3d(0, 0px, 0);
+    }
+
+    50% {
+        transform: translate3d(0, -8px, 0);
+    }
+}
+
+/* Service card hover animation removed - was causing floating effect that interfered with button clicks.
+   Main hover effect is defined at line 217-220 below */
+
+
+/* Badge Pulse - Optimized */
+@keyframes badgePulse {
+
+    0%,
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.05, 1.05, 1);
+    }
+}
+
+.service-badge {
+    animation: badgePulse 2s ease-in-out infinite;
+}
+
+/* Apply Optimized Animations - only play ONCE via .animate-ready class */
+.animate-ready.service-card {
+    animation: fadeInUp-optimized 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-ready.feature-card {
+    animation: bounceIn-optimized 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-ready.stat-item {
+    animation: zoomIn-optimized 0.5s ease-out forwards;
+}
+
+/* Stagger delays */
+.animate-ready.service-card:nth-child(1) { animation-delay: 0.1s; }
+.animate-ready.service-card:nth-child(2) { animation-delay: 0.15s; }
+.animate-ready.service-card:nth-child(3) { animation-delay: 0.2s; }
+.animate-ready.service-card:nth-child(4) { animation-delay: 0.25s; }
+.animate-ready.service-card:nth-child(5) { animation-delay: 0.3s; }
+.animate-ready.service-card:nth-child(6) { animation-delay: 0.35s; }
+
+.feature-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.feature-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.feature-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.feature-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.stat-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.stat-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.stat-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.stat-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+/* Smooth Hover Effects - No Lag */
+.service-card {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.3s ease;
+}
+
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media (hover: hover) {
+    .service-card:hover {
+        transform: translate3d(0, -10px, 0) scale3d(1.02, 1.02, 1);
+        box-shadow: 0 20px 40px rgba(0, 102, 204, 0.2);
+    }
+
+    .feature-card:hover {
+        transform: translate3d(0, -5px, 0);
+        box-shadow: 0 15px 30px rgba(0, 102, 204, 0.15);
+    }
+
+    /* Button Hover - Clean */
+    .btn:hover {
+        transform: translate3d(0, -2px, 0);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* Premium Floating Animation */
+@keyframes premiumFloat {
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-10px) scale(1.02);
+    }
+}
+
+.floating-contact {
+    animation: slideInRight 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) both;
+}
+
+.floating-btn {
+    animation: premiumFloat 3s ease-in-out infinite both;
+}
+
+/* Stagger the float animation for a more dynamic look */
+.floating-btn:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.floating-btn:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.floating-btn:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.floating-btn:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+
+
+
+
+/* Simple Icon Rotation */
+.feature-card i {
+    transition: transform 0.4s ease;
+}
+
+@media (hover: hover) {
+    .feature-card:hover i {
+        transform: rotate(360deg) scale3d(1.1, 1.1, 1);
+    }
+}
+
+/* Optimize Image Transitions */
+.service-image {
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.service-image img {
+    transition: transform 0.4s ease;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+@media (hover: hover) {
+    .service-card:hover .service-image img {
+        transform: scale3d(1.08, 1.08, 1);
+    }
+}
+
+/* Remove particle container lag */
+.particle-container {
+    pointer-events: none;
+    will-change: auto;
+    /* Don't animate all particles */
+}
+
+/* Disable animations on low-end devices */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Optimize for Mobile */
+@media (max-width: 768px) {
+
+
+
+    .feature-card:hover {
+        transform: none;
+    }
+
+    /* Reduce particle count on mobile */
+    .particle:nth-child(n+10) {
+        display: none;
+    }
+}
+
+/* Initial Hidden State - only before animation fires */
+.service-card:not(.visible),
+.feature-card:not(.visible),
+.stat-item:not(.visible) {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+}
+
+/* Clean Ripple Effect */
+@keyframes ripple-clean {
+    to {
+        transform: scale3d(4, 4, 1);
+        opacity: 0;
+    }
+}
+
+.ripple-effect {
+    animation: ripple-clean 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Scroll Progress - No Lag */
+#scroll-progress {
+    transform: translate3d(0, 0, 0);
+    will-change: width;
+}
+
+/* Back to Top - Simple Fade */
+.back-to-top {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Remove unnecessary animations */
+.animated-bg,
+.gradient-shift,
+.glitch-hover,
+.rainbow-border,
+.typewriter-text,
+.sparkle,
+.flip-on-hover {
+    animation: none !important;
+}
+
+/* Performance Boost */
+img {
+    image-rendering: -webkit-optimize-contrast;
+    will-change: auto;
+    /* Don't reserve GPU for all images */
+}
+
+/* Smooth Scroll Performance */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+/* Clean Loading State */
+@keyframes fadeIn-simple {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn-simple 0.3s ease-in;
+}
+
+/* === FINAL OPTIMIZATIONS === */
+
+/* Limit concurrent animations */
+*:nth-of-type(n+10) {
+    animation-delay: 0s !important;
+    /* Don't delay too many elements */
+}
+
+/* Use simpler easing */
+* {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Finalise visible state — NO animation replay, just lock opacity & position */
+.visible {
+    opacity: 1 !important;
+    transform: translate3d(0, 0, 0) !important;
+    /* animation intentionally removed — prevents flash on mobile tap */
+}
+
+/* Clean Navigation Scroll */
+.header {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (hover: hover) {
+    /* Remove shadow pulse on hover */
+    .service-card:hover,
+    .feature-card:hover {
+        box-shadow: 0 15px 35px rgba(0, 102, 204, 0.2);
+    }
+}
+
+/* === WEBKIT RENDERING & FLICKER FIXES === */
+.gallery-img-wrapper,
+.service-image,
+.gal-card,
+.sport-card,
+.hero-slide-bg {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.gallery-img-wrapper img,
+.service-image img,
+.gal-card img,
+.sport-card-img,
+.hero-slide-bg img {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+/* === MOBILE HOVER OVERRIDES === */
+@media (max-width: 768px) {
+    .gallery-item:hover,
+    .service-card:hover,
+    .feature-card:hover,
+    .gal-card,
+    .gal-card:hover,
+    .sport-card:hover,
+    .btn:hover,
+    .testimonial-card-slider:hover,
+    .testimonial-card:hover,
+    .review-card:hover {
+        transform: none !important;
+    }
+
+    .gallery-item:hover .gallery-img-wrapper img,
+    .service-card:hover .service-image img,
+    .gal-card img,
+    .sport-card-img,
+    .testimonial-card-slider:hover .customer-photo,
+    .testimonial-card:hover .customer-photo {
+        transform: none !important;
+    }
+}
+
+/* === MOBILE TAP FLASH FIX ===
+   Prevents images/cards from disappearing + reappearing when tapped on mobile.
+   Root causes fixed:
+   1. Tap triggers :hover which re-paints opacity (now guarded by @media hover:hover)
+   2. .visible re-ran the fade-from-0 animation on each touch (now removed)
+   3. Inline JS transforms overrode .visible !important (JS hover listeners removed)
+*/
+@media (hover: none), (pointer: coarse) {
+    /* Remove tap highlight flash on all interactive cards & images */
+    .service-card,
+    .feature-card,
+    .testimonial-card-slider,
+    .testimonial-card,
+    .floating-btn,
+    .service-image img,
+    .customer-photo {
+        -webkit-tap-highlight-color: transparent;
+        tap-highlight-color: transparent;
+    }
+
+    /* Prevent any :hover state from sticking after finger lifts */
+    .service-card:hover,
+    .service-card:focus,
+    .feature-card:hover,
+    .feature-card:focus {
+        transform: none !important;
+        box-shadow: var(--shadow-md) !important;
+    }
+
+    /* Prevent image zoom flash on tap */
+    .service-image img:hover,
+    .service-image img:active {
+        transform: none !important;
+    }
+
+    /* Ensure visible cards never lose opacity on touch repaint */
+    .service-card.visible,
+    .feature-card.visible,
+    .stat-item.visible {
+        opacity: 1 !important;
+        transform: translate3d(0, 0, 0) !important;
+        animation: none !important;
+    }
+}

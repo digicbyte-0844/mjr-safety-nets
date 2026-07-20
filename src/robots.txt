@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://safety-net-18e70.web.app/sitemap.xml

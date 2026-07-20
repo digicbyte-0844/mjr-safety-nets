@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sports Nets Hyderabad | Cricket & Football Nets | MJR Building covering nets</title>
+    <meta name="description"
+        content="Professional cricket practice nets and football goal nets in Hyderabad. Rooftop, lawn, and academy installations. Durable heavy-duty sports netting. Call 9553331979">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=4">
+    <link rel="stylesheet" href="../../assets/css/animations.css">
+    <style>
+        .service-hero {
+            background: linear-gradient(rgba(34, 139, 34, 0.70), rgba(15, 40, 15, 0.75)),
+                        url('../../assewebp');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 0 0 50% 50% / 4%;
+            text-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .service-hero::before {
+            content: '🏏';
+            position: absolute;
+            font-size: 15rem;
+            opacity: 0.08;
+            top: -50px;
+            right: 50px;
+        }
+
+        .service-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #ffffff !important;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .service-hero .subtitle {
+            font-size: 1.25rem;
+            color: #ffffff !important;
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
+            opacity: 1;
+            font-weight: 500;
+            margin-bottom: 2rem;
+        }
+
+        .service-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .features-section {
+            padding: 4rem 2rem;
+            background: var(--bg-light);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+
+        .feature-card {
+            background: var(--bg-white);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 24px rgba(34, 139, 34, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #228B22;
+            margin-bottom: 1rem;
+        }
+
+        /* Sports Type Cards */
+        .sports-types {
+            padding: 4rem 2rem;
+            background: #fff;
+        }
+
+        .sports-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+
+        .sport-card {
+            border-radius: 1.25rem;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+            background: #fff;
+        }
+
+        .sport-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 16px 40px rgba(34, 139, 34, 0.25);
+        }
+
+        .sport-card-img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .sport-card-body {
+            padding: 1.5rem;
+        }
+
+        .sport-card-body .sport-tag {
+            display: inline-block;
+            background: #228B22;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            margin-bottom: 0.75rem;
+        }
+
+        .sport-card-body h3 {
+            font-size: 1.3rem;
+            margin: 0 0 0.5rem;
+            color: #1a1a2e;
+        }
+
+        .sport-card-body p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0 0 1rem;
+        }
+
+        .sport-card-body a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: #228B22;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        .sport-card-body a:hover {
+            background: #1a6e1a;
+            transform: scale(1.04);
+        }
+
+        .pricing-section {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #228B22 0%, #1a1a2e 100%);
+            color: #ffffff !important;
+            text-align: center;
+        }
+
+        .pricing-section h2,
+        .pricing-section p {
+            color: #ffffff !important;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn-primary {
+            background: #FF6600;
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary:hover {
+            background: #FF8533;
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 102, 0, 0.3);
+        }
+
+        .btn-home {
+            background: white;
+            color: #228B22;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-home:hover {
+            background: #f0fff0;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    <link rel="stylesheet" href="../../assets/css/floating-contact.css">
+</head>
+
+<body>
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-badge">🏏 SPORTS NETTING EXPERTS</div>
+            <h1>Sports Nets</h1>
+            <p class="subtitle">Professional cricket practice nets and football goal nets for rooftops, lawns & academies.<br>Heavy-duty, weather-resistant nylon netting with sturdy steel pole frames.</p>
+            <div class="cta-buttons">
+                <a href="tel:9553331979" class="btn-primary"><i class="fas fa-phone"></i> Call: 9553331979</a>
+                <a href="https://wa.me/919553331979?text=Hi, need sports nets quote" class="btn-primary"
+                    style="background: #25D366;"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="../../index.html" class="btn-home"><i class="fas fa-home"></i> Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sports Type Cards -->
+    <section class="sports-types">
+        <div class="container">
+            <h2 style="text-align:center; font-size:2.4rem; margin-bottom:0.5rem;">Types of Sports Nets</h2>
+            <p style="text-align:center; color:#666; margin-bottom:2.5rem;">Premium netting for all popular sports</p>
+            <div class="sports-grid">
+                <!-- Cricket 1 -->
+                <div class="sport-card">
+                    <img class="sport-card-img" src="../../assewebp" alt="Cricket Practice Net Hyderabad">
+                    <div class="sport-card-body">
+                        <span class="sport-tag">🏏 Cricket</span>
+                        <h3>Rooftop Cricket Practice Nets</h3>
+                        <p>Heavy-duty green boundary nylon netting installed on terrace rooftops with steel pole frame anchoring. Ideal for building top practice sessions.</p>
+                        <a href="https://wa.me/919553331979?text=Hi, I need a quote for rooftop cricket nets"><i class="fab fa-whatsapp"></i> Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Cricket 2 -->
+                <div class="sport-card">
+                    <img class="sport-card-img" src="../../asswebp" alt="Lawn Cricket Nets Hyderabad">
+                    <div class="sport-card-body">
+                        <span class="sport-tag">🏏 Cricket</span>
+                        <h3>Lawn / Academy Cricket Nets</h3>
+                        <p>Professional full-pitch academy nets with ground-mounted pole frames. Suitable for BCCI-standard practice pitches, colonies, and coaching centres.</p>
+                        <a href="https://wa.me/919553331979?text=Hi, I need a quote for lawn cricket nets"><i class="fab fa-whatsapp"></i> Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Football -->
+                <div class="sport-card">
+                    <img class="sport-card-img" src="../../asswebp" alt="Football Goal Net Hyderabad">
+                    <div class="sport-card-body">
+                        <span class="sport-tag">⚽ Football</span>
+                        <h3>Football Goal Nets</h3>
+                        <p>Heavy-duty, weatherproof white nylon football goal nets fitted to professional steel goal frames. Suitable for residential complexes, schools, and sports academies.</p>
+                        <a href="https://wa.me/919553331979?text=Hi, I need a quote for football goal nets"><i class="fab fa-whatsapp"></i> Get Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem;">Why Choose Our Sports Nets?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💪</div>
+                    <h3>Heavy-Duty Nylon</h3>
+                    <p>Thick-gauge nylon thread woven into double-knotted diamond mesh for maximum break strength.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">☀️</div>
+                    <h3>UV & Weather Resistant</h3>
+                    <p>UV-stabilized threads retain strength and color under intense Hyderabad summer heat.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔩</div>
+                    <h3>Steel Pole Frames</h3>
+                    <p>Hot-dip galvanized steel pole systems that resist rust and hold firm under ball impact loads.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Rooftop Friendly</h3>
+                    <p>Lightweight frame design to avoid structural overloading on rooftop terrace slabs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Book a Free Site Survey</h2>
+            <p style="font-size: 1.25rem; opacity: 0.95; margin-bottom: 2rem;">Custom Sizing | Steel Frame Options | 5+ Year Lifespan</p>
+            <div class="cta-buttons">
+                <a href="tel:9553331979" class="btn-primary"><i class="fas fa-phone"></i> Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const cards = document.querySelectorAll('.feature-card, .sport-card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        cards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(24px)';
+            card.style.transition = 'all 0.6s ease-out';
+            observer.observe(card);
+        });
+    </script>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contact">
+        <a href="https://wa.me/919553331979?text=Hi, I'm interested in sports nets" 
+           class="floating-btn whatsapp" 
+           data-tooltip="WhatsApp Us"
+           aria-label="Contact us on WhatsApp"
+           target="_blank"
+           rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:9553331979" 
+           class="floating-btn phone" 
+           data-tooltip="Call: 9553331979"
+           aria-label="Call us at 9553331979">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="mailto:merugujaggarao1979@gmail.com" 
+           class="floating-btn email" 
+           data-tooltip="Email Us"
+           aria-label="Send us an email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+    <script src="../../assets/js/whatsapp-modal.js"></script>
+</body>
+
+</html>
